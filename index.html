@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Longevity-Wissen: alle Guides | Dr. Lara Vadlau</title>
+<meta name="description" content="Alle Guides von Dr. Lara Vadlau an einem Ort: Blutwerte, Supplements, Muskelaufbau, NMN, Mikroplastik, Bio-Einkauf und Nierenwerte. Evidenzbasiert, ohne Hype.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dr. Lara Vadlau · Longevity Medicine">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Longevity-Wissen: alle Guides">
+<meta property="og:description" content="Blutwerte, Supplements, Muskelaufbau, NMN und mehr. Evidenzbasiert, ohne Hype.">
+<meta property="og:url" content="https://lara-wissen.vercel.app">
+<meta property="og:image" content="https://lara-wissen.vercel.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Longevity-Wissen: alle Guides">
+<meta name="twitter:description" content="Blutwerte, Supplements, Muskelaufbau, NMN und mehr. Evidenzbasiert, ohne Hype.">
+<meta name="twitter:image" content="https://lara-wissen.vercel.app/og.jpg">
+<link rel="canonical" href="https://lara-wissen.vercel.app">
+<meta name="theme-color" content="#0d131e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#d4af37;--gold-soft:#e6c86b;--dark:#141b28;--darker:#0d131e;
+  --panel:#1b2434;--panel-2:#212c40;--line:rgba(212,175,55,.18);
+  --text:#e8ecf3;--muted:#9aa6bb;--muted-2:#6f7c93;
+  --green:#5fbf8f;--maxw:1120px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--darker);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:18px}
+a{color:var(--gold-soft);text-decoration:none}
+
+header{position:sticky;top:0;z-index:1000;background:rgba(13,19,30,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .container{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Fraunces',serif;font-size:19px;font-weight:600;color:#fff}
+.brand span{color:var(--gold)}
+header a.ig{color:var(--muted);font-size:13.5px;font-weight:500}
+header a.ig:hover{color:var(--gold)}
+
+.hero{position:relative;padding:82px 0 54px;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-30%;right:-15%;width:680px;height:680px;background:radial-gradient(circle,rgba(212,175,55,.12) 0%,transparent 68%);pointer-events:none}
+.hero .container{position:relative;z-index:2}
+.hero h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(34px,5.4vw,56px);line-height:1.1;letter-spacing:-.02em;color:#fff;max-width:20ch}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .lede{margin-top:24px;font-size:clamp(16px,2.1vw,20px);color:var(--muted);max-width:62ch}
+.byline{margin-top:34px;display:flex;align-items:center;gap:14px;color:var(--muted);font-size:14px}
+.byline .avatar{width:46px;height:46px;border-radius:50%;overflow:hidden;flex:none;border:2px solid var(--gold)}
+.byline .avatar img{width:100%;height:100%;object-fit:cover}
+.byline b{color:var(--text)}
+
+section{padding:54px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden;display:block;transition:transform .22s,border-color .22s;text-decoration:none}
+.card:hover{transform:translateY(-3px);border-color:var(--line);text-decoration:none}
+.card .thumb{position:relative;aspect-ratio:16/9;overflow:hidden}
+.card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.card .thumb::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,19,30,.05),rgba(13,19,30,.7))}
+.card .body{padding:20px 22px 22px}
+.card .kw{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.card h2{font-family:'Fraunces',serif;font-size:20px;font-weight:500;color:#fff;margin:8px 0 6px;line-height:1.25}
+.card p{color:var(--muted);font-size:14.5px}
+.card .go{display:block;margin-top:12px;color:var(--gold);font-size:13px;font-weight:500}
+
+.note{margin-top:34px;background:var(--darker);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 24px;color:var(--text);font-size:15.5px}
+.note b{color:var(--gold-soft)}
+
+.cta{margin-top:10px;background:linear-gradient(135deg,var(--panel),var(--darker));border:1px solid var(--line);border-radius:22px;padding:48px 40px;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:520px;height:420px;background:radial-gradient(circle,rgba(212,175,55,.14),transparent 70%);pointer-events:none}
+.cta-photo{position:relative;width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:3px solid var(--gold);box-shadow:0 12px 34px rgba(0,0,0,.45);margin:0 auto 20px;display:block}
+.cta h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(24px,3.6vw,36px);color:#fff;position:relative;line-height:1.16}
+.cta p{color:var(--muted);max-width:54ch;margin:16px auto 0;position:relative;font-size:16.5px}
+.btn{display:inline-block;margin-top:26px;background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#1a1206;font-weight:600;font-size:15px;padding:14px 32px;border-radius:999px;position:relative;box-shadow:0 10px 30px rgba(212,175,55,.22);transition:transform .2s}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.cta .socials{margin-top:24px;display:flex;gap:22px;justify-content:center;position:relative}
+.cta .socials a{color:var(--muted);font-size:13.5px;cursor:pointer}
+
+.disclaimer{margin-top:30px;background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:20px 24px;color:var(--muted-2);font-size:13.5px}
+.disclaimer b{color:var(--muted)}
+footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted-2);font-size:13px;margin-top:30px}
+footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* newsletter modal */
+.nl-overlay{position:fixed;inset:0;background:rgba(6,10,16,.72);backdrop-filter:blur(4px);z-index:3000;display:none;align-items:center;justify-content:center;padding:20px}
+.nl-overlay.open{display:flex}
+.nl-modal{background:var(--panel);border:1px solid var(--line);border-radius:20px;max-width:440px;width:100%;padding:34px 32px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.nl-modal h3{font-family:'Fraunces',serif;font-weight:500;font-size:24px;color:#fff;margin-bottom:8px}
+.nl-modal p.intro{color:var(--muted);font-size:14.5px;margin-bottom:22px}
+.nl-close{position:absolute;top:14px;right:16px;background:none;border:none;color:var(--muted);font-size:26px;cursor:pointer;line-height:1;padding:4px}
+.nl-field{margin-bottom:14px}
+.nl-field label{display:block;font-size:12.5px;color:var(--gold);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px}
+.nl-field input{width:100%;background:var(--darker);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:12px 14px;color:var(--text);font-size:15px;font-family:inherit}
+.nl-field input:focus{outline:none;border-color:var(--gold)}
+.nl-field .opt{color:var(--muted-2);text-transform:none;letter-spacing:0;font-weight:400}
+.nl-submit{width:100%;margin-top:8px;background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#1a1206;font-weight:600;font-size:15px;padding:14px;border:none;border-radius:999px;cursor:pointer}
+.nl-note{margin-top:14px;font-size:11.5px;color:var(--muted-2);line-height:1.5}
+.nl-success{text-align:center;padding:16px 0}
+.nl-success .ok{font-size:44px;color:var(--green);line-height:1;margin-bottom:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="brand">Dr. Lara <span>Vadlau</span></div>
+    <a class="ig" href="https://www.instagram.com/laravadlau/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow reveal">Longevity Medicine · Wissens-Bibliothek</div>
+    <h1 class="reveal">Alle Guides an <em>einem Ort</em>.</h1>
+    <p class="lede reveal">Zu jedem Thema, das ich in meinen Reels anspreche, findest du hier die ganze Tiefe: evidenzbasiert, ehrlich eingeordnet, ohne Hype. Zum Nachlesen, Mitnehmen und Ausdrucken.</p>
+    <div class="byline reveal">
+      <div class="avatar"><img src="lara-avatar.jpg" alt="Dr. Lara Vadlau"></div>
+      <div>Von <b>Dr. Lara Vadlau</b> · Ärztin &amp; Olympiasiegerin</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="container">
+    <div class="grid">
+      <a class="card reveal" href="https://lara-blutwerte.vercel.app">
+        <div class="thumb"><img src="thumb-blutwerte.webp" alt="Blutwerte" loading="lazy"></div>
+        <div class="body"><span class="kw">Blutwerte</span><h2>Deine Blutwert-Checkliste</h2><p>19 Marker mit Optimalwerten. Warum normal nicht optimal ist.</p><span class="go">Guide öffnen &rarr;</span></div>
+      </a>
+      <a class="card reveal" href="https://lara-nierenwerte.vercel.app">
+        <div class="thumb"><img src="thumb-nierenwerte.webp" alt="Nierenwerte" loading="lazy"></div>
+        <div class="body"><span class="kw">Nierenwerte</span><h2>Diese Nierenwerte zählen wirklich</h2><p>Funktion und Schaden richtig messen. Kreatinin allein reicht nicht.</p><span class="go">Guide öffnen &rarr;</span></div>
+      </a>
+      <a class="card reveal" href="https://lara-supplements.vercel.app">
+        <div class="thumb"><img src="thumb-supplements.webp" alt="Supplements" loading="lazy"></div>
+        <div class="body"><span class="kw">Supplements</span><h2>Was wirklich wirkt</h2><p>Nach Studienlage sortiert. Was belegt ist, was Marketing ist.</p><span class="go">Guide öffnen &rarr;</span></div>
+      </a>
+      <a class="card reveal" href="https://lara-muskelaufbau.vercel.app">
+        <div class="thumb"><img src="thumb-muskelaufbau.webp" alt="Muskelaufbau" loading="lazy"></div>
+        <div class="body"><span class="kw">Muskelaufbau</span><h2>So baust du Muskeln auf</h2><p>Die 4 Hebel mit Evidenz, in der richtigen Reihenfolge. In jedem Alter.</p><span class="go">Guide öffnen &rarr;</span></div>
+      </a>
+      <a class="card reveal" href="https://lara-nmn.vercel.app">
+        <div class="thumb"><img src="thumb-nmn.webp" alt="NMN" loading="lazy"></div>
+        <div class="body"><span class="kw">NMN</span><h2>Was du über NMN wissen musst</h2><p>NAD+ ist der Schlüssel. Was belegt ist und was noch offen.</p><span class="go">Guide öffnen &rarr;</span></div>
+      </a>
+      <a class="card reveal" href="https://lara-mikroplastik.vercel.app">
+        <div class="thumb"><img src="thumb-mikroplastik.webp" alt="Mikroplastik" loading="lazy"></div>
+        <div class="body"><span class="kw">Mikroplastik</span><h2>Die 8 Tauschs in der Küche</h2><p>Wo sich der Tausch wirklich lohnt. Ohne Panik, mit Studienlage.</p><span class="go">Guide öffnen &rarr;</span></div>
+      </a>
+      <a class="card reveal" href="https://lara-bio.vercel.app">
+        <div class="thumb"><img src="thumb-bio.webp" alt="Bio-Einkauf" loading="lazy"></div>
+        <div class="body"><span class="kw">Bio-Einkauf</span><h2>Wo sich Bio wirklich lohnt</h2><p>Nach Pestizidbelastung sortiert. Wo Bio zählt, wo du sparen kannst.</p><span class="go">Guide öffnen &rarr;</span></div>
+      </a>
+    </div>
+    <div class="note reveal">
+      <b>Neu hier?</b> Jeder Guide ist eine Vertiefung zu einem meiner Reels. Du kannst jeden davon als PDF speichern oder ausdrucken, etwa um die Blutwert-Liste zum nächsten Arzttermin mitzunehmen.
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="container">
+    <div class="cta reveal">
+      <img class="cta-photo" src="lara-portrait.jpg" alt="Dr. Lara Vadlau" loading="lazy">
+      <h2>Wissen, das dich stärkt,<br>nicht verunsichert.</h2>
+      <p>Jede Woche neue Reels und Vertiefungen: die Studie hinter der Schlagzeile, ehrlich eingeordnet. Kein Hype, keine Panikmache.</p>
+      <a class="btn" href="https://www.instagram.com/laravadlau/" target="_blank" rel="noopener">Folge für mehr auf Instagram →</a>
+      <div class="socials">
+        <a href="https://www.instagram.com/laravadlau/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" data-nl-open>Newsletter</a>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(135deg,rgba(212,175,55,.14),rgba(212,175,55,.03));border:1px solid var(--line);border-radius:18px;padding:26px 30px">
+      <div style="min-width:240px;flex:1">
+        <div style="font-family:'Fraunces',serif;font-size:22px;color:#fff;font-weight:500">Du willst mehr?</div>
+        <div style="color:var(--muted);font-size:15px;margin-top:5px">Die <b style="color:var(--gold-soft)">30-Tage-Longevity-Challenge</b> gibt es jetzt im Angebot.</div>
+      </div>
+      <a href="https://hi.switchy.io/zFRA" target="_blank" rel="noopener" style="flex:none;background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#1a1206;font-weight:600;font-size:15px;padding:14px 28px;border-radius:999px;white-space:nowrap;text-decoration:none;box-shadow:0 10px 26px rgba(212,175,55,.22)">Zur 30-Tage-Challenge &rarr;</a>
+    </div>
+
+    <div class="disclaimer reveal">
+      <b>Wichtiger Hinweis.</b> Alle Inhalte dienen der allgemeinen Information und ersetzen keine individuelle ärztliche Beratung, Diagnose oder Behandlung. Lass auffällige Befunde immer ärztlich abklären.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>© 2026 Dr. Lara Vadlau · Longevity Medicine</div>
+    <div>7 Guides · laufend erweitert</div>
+  </div>
+</footer>
+
+<div class="nl-overlay" id="nlOverlay" role="dialog" aria-modal="true" aria-label="Newsletter-Anmeldung">
+  <div class="nl-modal">
+    <button class="nl-close" id="nlClose" aria-label="Schliessen">&times;</button>
+    <div id="nlForming">
+      <h3>Newsletter</h3>
+      <p class="intro">Longevity-Wissen, ehrlich eingeordnet. Kein Spam, jederzeit abbestellbar.</p>
+      <form id="nlForm" novalidate>
+        <div class="nl-field"><label for="nlName">Name</label><input id="nlName" name="name" type="text" required autocomplete="name"></div>
+        <div class="nl-field"><label for="nlEmail">E-Mail-Adresse</label><input id="nlEmail" name="email" type="email" required autocomplete="email"></div>
+        <div class="nl-field"><label for="nlPhone">Handynummer <span class="opt">(optional)</span></label><input id="nlPhone" name="phone" type="tel" autocomplete="tel"></div>
+        <button class="nl-submit" type="submit">Anmelden</button>
+        <p class="nl-note">Mit der Anmeldung stimmst du zu, dass deine Angaben zum Versand des Newsletters gespeichert werden.</p>
+      </form>
+    </div>
+    <div id="nlDone" class="nl-success" style="display:none">
+      <div class="ok">&#10003;</div>
+      <h3>Danke, du bist dabei!</h3>
+      <p class="intro">Wir haben deine Anmeldung erhalten.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+(function(){
+  var ENDPOINT="https://script.google.com/macros/s/AKfycbxr7dsmt1WNeWHnz8ORkzMpfqTb0o7GfyZQCNAbmtPFQ9CBpt3sR93Pl4tDfr-BupeviA/exec";
+  var SOURCE="HUB";
+  var ov=document.getElementById('nlOverlay');
+  if(!ov)return;
+  function open(e){if(e)e.preventDefault();ov.classList.add('open');setTimeout(function(){var n=document.getElementById('nlName');if(n)n.focus();},60);}
+  function close(){ov.classList.remove('open');}
+  document.querySelectorAll('[data-nl-open]').forEach(function(a){a.addEventListener('click',open);});
+  document.getElementById('nlClose').addEventListener('click',close);
+  ov.addEventListener('click',function(e){if(e.target===ov)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  document.getElementById('nlForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('nlName').value.trim();
+    var email=document.getElementById('nlEmail').value.trim();
+    var phone=document.getElementById('nlPhone').value.trim();
+    if(!name||!email){return;}
+    var btn=this.querySelector('.nl-submit');btn.disabled=true;btn.textContent='Wird gesendet...';
+    var body=new URLSearchParams({name:name,email:email,phone:phone,source:SOURCE}).toString();
+    var done=function(){document.getElementById('nlForming').style.display='none';document.getElementById('nlDone').style.display='block';};
+    fetch(ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},body:body}).then(done).catch(done);
+  });
+})();
+</script>
+</body>
+</html>
